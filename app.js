@@ -1,5 +1,5 @@
 $.ajax({
-	url : "http://spreadsheets.google.com/feeds/list/1-oYlvGP573O4ml4AzgapLhK_KoEqlfDIzvSnWz48_nQ/od6/public/values?alt=json",
+	url : "http://spreadsheets.google.com/feeds/list/od6/public/values?alt=json",
 	
 	success:function(data){
 		
@@ -24,7 +24,7 @@ $.ajax({
 			var nom = tab[i].gsx$prénoms.$t;
 			var url= tab[i].gsx$url.$t;
 			$("#img"+i).html(nom + "<br/><img src='" + url +"'/>");
-			
+
 
 
 
